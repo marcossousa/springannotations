@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FILESYSTEMS APPLICATION_NAME="AddressBook" ENTITY="FileSystems"
+ VERSION="8.0.4" WORKSPACE_HOME="./WebContent/WEB-INF">
+ <FILESYSTEM ENTITY="FileSystemFolder" LOCATION="%exadel.workspace%" NAME="WEB-INF"/>
+ <FILESYSTEM ENTITY="FileSystemFolder" INFO="Content-Type=Web"
+  LOCATION="%exadel.workspace%/.." NAME="WEB-ROOT"/>
+ <FILESYSTEM ENTITY="FileSystemFolder"
+  LOCATION="%exadel.workspace%/../../JavaSource" NAME="src"/>
+ <FILESYSTEM ENTITY="FileSystemFolder" LOCATION="%exadel.workspace%/lib" NAME="lib"/>
+ <FILESYSTEM ENTITY="FileSystemFolder"
+  LOCATION="%exadel.workspace%/classes" NAME="classes"/>
+ <FILESYSTEM ENTITY="FileSystemJar" INFO="hidden=yes"
+  LOCATION="%exadel.workspace%/lib/commons-beanutils.jar" NAME="lib-commons-beanutils.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar" INFO="hidden=yes"
+  LOCATION="%exadel.workspace%/lib/commons-collections.jar" NAME="lib-commons-collections.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar" INFO="hidden=yes"
+  LOCATION="%exadel.workspace%/lib/commons-digester.jar" NAME="lib-commons-digester.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar" INFO="hidden=yes"
+  LOCATION="%exadel.workspace%/lib/commons-logging.jar" NAME="lib-commons-logging.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar" INFO="hidden=yes"
+  LOCATION="%exadel.workspace%/lib/jsf-api.jar" NAME="lib-jsf-api.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar" INFO="hidden=yes"
+  LOCATION="%exadel.workspace%/lib/jsf-impl.jar" NAME="lib-jsf-impl.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar" INFO="hidden=yes"
+  LOCATION="%exadel.workspace%/lib/jstl.jar" NAME="lib-jstl.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar" INFO="hidden=yes"
+  LOCATION="%exadel.workspace%/lib/standard.jar" NAME="lib-standard.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jsf-facelets.jar" NAME="lib-jsf-facelets.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/el-api.jar" NAME="lib-el-api.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/el-ri.jar" NAME="lib-el-ri.jar"/>
+ <FILESYSTEM ENTITY="FileSystemFolder"
+  LOCATION="%exadel.eclipse.project%" NAME="flet001"/>
+ <FILESYSTEM ENTITY="FileSystemJar" INFO="hidden=yes"
+  LOCATION="%exadel.workspace%/lib/common-annotations.jar" NAME="lib-common-annotations.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/ant-1.6.5.jar" NAME="lib-ant-1.6.5.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/ant-antlr-1.6.5.jar" NAME="lib-ant-antlr-1.6.5.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/ant-junit-1.6.5.jar" NAME="lib-ant-junit-1.6.5.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/ant-launcher-1.6.5.jar" NAME="lib-ant-launcher-1.6.5.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/ant-swing-1.6.5.jar" NAME="lib-ant-swing-1.6.5.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/antlr-2.7.6rc1.jar" NAME="lib-antlr-2.7.6rc1.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/asm-attrs.jar" NAME="lib-asm-attrs.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/asm.jar" NAME="lib-asm.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/c3p0-0.9.0.jar" NAME="lib-c3p0-0.9.0.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/cglib-2.1.3.jar" NAME="lib-cglib-2.1.3.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/cleanimports.jar" NAME="lib-cleanimports.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/commons-collections-2.1.1.jar" NAME="lib-commons-collections-2.1.1.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/commons-lang-2.0.jar" NAME="lib-commons-lang-2.0.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/commons-logging-1.0.4.jar" NAME="lib-commons-logging-1.0.4.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/concurrent-1.3.2.jar" NAME="lib-concurrent-1.3.2.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/connector.jar" NAME="lib-connector.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/dom4j-1.6.1.jar" NAME="lib-dom4j-1.6.1.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/ehcache-1.1.jar" NAME="lib-ehcache-1.1.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jaas.jar" NAME="lib-jaas.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jacc-1_0-fr.jar" NAME="lib-jacc-1_0-fr.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jaxen-1.1-beta-7.jar" NAME="lib-jaxen-1.1-beta-7.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jboss-cache.jar" NAME="lib-jboss-cache.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jboss-common.jar" NAME="lib-jboss-common.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jboss-jmx.jar" NAME="lib-jboss-jmx.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jboss-system.jar" NAME="lib-jboss-system.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jdbc2_0-stdext.jar" NAME="lib-jdbc2_0-stdext.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jgroups-2.2.8.jar" NAME="lib-jgroups-2.2.8.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jta.jar" NAME="lib-jta.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/junit-3.8.1.jar" NAME="lib-junit-3.8.1.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/log4j-1.2.11.jar" NAME="lib-log4j-1.2.11.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/oscache-2.1.jar" NAME="lib-oscache-2.1.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/proxool-0.8.3.jar" NAME="lib-proxool-0.8.3.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/swarmcache-1.0rc2.jar" NAME="lib-swarmcache-1.0rc2.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/syndiag2.jar" NAME="lib-syndiag2.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/versioncheck.jar" NAME="lib-versioncheck.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/xerces-2.6.2.jar" NAME="lib-xerces-2.6.2.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/xml-apis.jar" NAME="lib-xml-apis.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/hibernate-3.2.0.ga.jar" NAME="lib-hibernate-3.2.0.ga.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/hibernate-annotations-3.2.0.ga.jar" NAME="lib-hibernate-annotations-3.2.0.ga.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/aspectjrt-1.5.3.jar" NAME="lib-aspectjrt-1.5.3.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/aspectjweaver-1.5.3.jar" NAME="lib-aspectjweaver-1.5.3.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/jstl-1.1.0.jar" NAME="lib-jstl-1.1.0.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/persistence-api-1.0.jar" NAME="lib-persistence-api-1.0.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/spring-2.0.5.jar" NAME="lib-spring-2.0.5.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/spring-annotation-base-1.1.1.ga.jar" NAME="lib-spring-annotation-base-1.1.1.ga.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/spring-annotation-hibernate-1.1.1.ga.jar" NAME="lib-spring-annotation-hibernate-1.1.1.ga.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/spring-annotation-security-1.1.1.ga.jar" NAME="lib-spring-annotation-security-1.1.1.ga.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/spring-annotation-web-1.1.1.ga.jar" NAME="lib-spring-annotation-web-1.1.1.ga.jar"/>
+ <FILESYSTEM ENTITY="FileSystemJar"
+  LOCATION="%exadel.workspace%/lib/spring-annotation-jsf-1.1.1.ga.jar" NAME="lib-spring-annotation-jsf-1.1.1.ga.jar"/>
+ <WEB ENTITY="ExadelWeb" MODEL_PATH="/web.xml" SERVLET_VERSION="2.4">
+  <MODULE ENTITY="WebJSFModule" MODEL_PATH="/faces-config.xml"
+   ROOT="WEB-ROOT" SRC="src" URI="/WEB-INF/faces-config.xml"/>
+ </WEB>
+</FILESYSTEMS>

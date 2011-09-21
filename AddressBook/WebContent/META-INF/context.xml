@@ -1,0 +1,10 @@
+<Context docBase="AddressBook" path="/AddressBook" source="org.eclipse.jst.j2ee.server:AddressBook" reloadable="false">
+
+
+  <Resource name="jdbc/AddressBook" auth="Container"
+          type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+          url="jdbc:postgresql://localhost:5432/AddressBook"
+          username="postgres" password="postgres" maxActive="20" maxIdle="10" maxWait="-1"/>
+
+	
+</Context>

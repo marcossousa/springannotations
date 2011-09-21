@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk" lang="pt-br"
+	jsfc="ui:composition" template="/WEB-INF/template/list.xhtml">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title jsfc="ui:define" name="title">Contact List #{addressBook.defaultMessage}</title>
+<link rel="stylesheet" href="../style/style.css" />
+</head>
+<body jsfc="ui:define" name="body">
+<table jsfc="h:dataTable" value="#{list}" var="ab" cellpadding="0" cellspacing="0" class="listTable">
+<tr>
+<td jsfc="h:column">
+<f:facet name="header">
+	#{msg.firstName}
+</f:facet>
+#{ab.firstName}
+</td>
+<td jsfc="h:column">
+<f:facet name="header">
+	#{msg.lastName}
+</f:facet>
+#{ab.lastName}
+</td>
+<td jsfc="h:column">
+<f:facet name="header">
+	#{msg.email}
+</f:facet>
+#{ab.email}
+</td>
+<td jsfc="h:column">
+<input type="submit" value="#{msg.edit}" jsfc="h:commandButton" action="#{addressBook.edit}"/>
+<input type="submit" value="#{msg.delete}" jsfc="h:commandButton" action="#{addressBook.delete}"/>
+</td>  
+</tr>
+</table>
+</body>
+<ui:define name="footList">
+		<table class="footList">
+		<tr>
+			<td>#{msg.rows}: #{addressBook.rows}</td>
+			<td align="right"><input type="submit" value="#{msg.add}" jsfc="h:commandButton" action="#{addressBook.createNew}"/></td>
+		</tr>
+		</table>
+</ui:define>
+</html>

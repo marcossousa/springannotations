@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"
+	default-autowire="byName" default-lazy-init="false">
+	
+
+	<bean id="dataSource" destroy-method="close"
+		class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName">
+			<value>java:/comp/env/jdbc/AddressBook</value>
+		</property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="net.sourceforge.sannotations.hibernate.AutomaticAnnotationSessionFactoryBean">
+		<property name="configLocations"
+			value="classpath*:hibernate.cfg.xml" />
+		<property name="schemaUpdate" value="false" />
+		<property name="dataSource" ref="dataSource" />
+		<property name="exposeTransactionAwareSessionFactory"
+			value="false" />
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+	</bean>
+
+	<tx:annotation-driven />
+</beans>

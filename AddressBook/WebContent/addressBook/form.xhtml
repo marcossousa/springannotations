@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk" lang="pt-br"
+	jsfc="ui:composition" template="/WEB-INF/template/form.xhtml">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title jsfc="ui:define" name="title">Contact Form</title>
+<link rel="stylesheet" href="../style/style.css" />
+</head>
+<body jsfc="ui:define" name="body">
+<table class="form" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><label for="firstName" jsfc="h:outputLabel">#{msg.firstName}</label></td>
+		<td><input id="firstName" type="text" value="#{addressBook.addressBookVo.firstName}" jsfc="h:inputText" maxlength="40" />
+		<br />
+		<span jsfc="h:message" for="firtName"/></td>
+	</tr>
+
+	<tr>
+		<td><label for="lastName" jsfc="h:outputLabel">#{msg.lastName}</label></td>
+		<td><input id="lastName" type="text" value="#{addressBook.addressBookVo.lastName}" jsfc="h:inputText"  maxlength="40" /> <br />
+		<span jsfc="h:message" for="lastName"/></td>
+	</tr>
+
+	<tr>
+		<td><label for="email" jsfc="h:outputLabel">#{msg.email}</label></td>
+		<td><input id="email" type="text" value="#{addressBook.addressBookVo.email}" jsfc="h:inputText"  maxlength="40" /> <br />
+		<span jsfc="h:message" for="email"/></td>
+	</tr>
+</table>
+</body>
+<ui:define name="buttonsBar">
+<input type="submit" value="#{msg.save}" jsfc="h:commandButton" action="#{addressBook.save}" /> 
+<input type="submit" value="#{msg.cancel}" jsfc="h:commandButton" action="#{addressBook.list}" /> 
+<input type="submit"  value="#{msg.add}" jsfc="h:commandButton" action="#{addressBook.createNew}" /> 
+</ui:define>
+<ui:define name="messages">
+	<h:messages globalOnly="true" layout="table"></h:messages>
+</ui:define>
+</html>

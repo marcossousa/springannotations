@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk" lang="pt-br">
+<head>
+<f:loadBundle basename="messages" var="msg" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<title>Address Book - <ui:insert name="title"></ui:insert></title>
+<link rel="stylesheet" href="${facesContext.externalContext.request.contextPath}/style/style.css"/>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" class="mainTable">
+	<tr class="content defaultTable">
+		<td><h:form>
+			<table cellpadding="0" cellspacing="0" class="form" width="100%">
+				<thead>
+					<tr class="buttonsBar" height="13px">
+						<td><ui:insert name="buttonsBar"></ui:insert></td>
+					</tr>
+
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>
+						<table align="center" cellpadding="0" cellspacing="0"
+							class="informationBar">
+							<tr>
+								<td><ui:insert name="messages"></ui:insert></td>
+							</tr>
+						</table>
+
+						</td>
+					</tr>
+					<tr>
+						<td><ui:insert name="body"></ui:insert></td>
+					</tr>
+				</tbody>
+			</table>
+		</h:form></td>
+	</tr>
+</table>
+</body>
+</html>
